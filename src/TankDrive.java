@@ -17,6 +17,6 @@ public class TankDrive extends Command {
         double speed = Controller.pad.getY(GenericHID.Hand.kLeft);
         double rotation = Controller.pad.getX(GenericHID.Hand.kRight);
 
-        //Main.drivetrain.getTankDrive().arcadeDrive(speed, rotation);
+        Main.drivetrain.getTankDrive().arcadeDrive(speed, rotation);
     }
 }

@@ -16,7 +16,7 @@ public class Mecanum extends Command {
         double y = Controller.pad.getY(GenericHID.Hand.kLeft);
         double twist = Controller.pad.getX(GenericHID.Hand.kRight);
 
-        Main.drivetrain.getMecanumDrive().driveCartesian(x,y,twist,0);
+        //Main.drivetrain.getMecanumDrive().driveCartesian(x,y,twist,0);
     }
 
 }
