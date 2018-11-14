@@ -13,13 +13,13 @@ public class Drivetrain extends Subsystem {
     public Drivetrain(int fL, int fR, int bL, int bR){
         this.fL = new WPI_TalonSRX(fL);
         this.fR = new WPI_TalonSRX(fR);
-        this.bL = new WPI_TalonSRX(bL);
-        this.bR = new WPI_TalonSRX(bR);
+//        this.bL = new WPI_TalonSRX(bL);
+//        this.bR = new WPI_TalonSRX(bR);
 
         this.fL.setNeutralMode(NeutralMode.Brake);
         this.fR.setNeutralMode(NeutralMode.Brake);
-        this.bL.setNeutralMode(NeutralMode.Brake);
-        this.bR.setNeutralMode(NeutralMode.Brake);
+//        this.bL.setNeutralMode(NeutralMode.Brake);
+//        this.bR.setNeutralMode(NeutralMode.Brake);
 
         //mecanumDrive = new MecanumDrive(this.fL,this.fR, this.bL, this.bR);
         tankDrive = new DifferentialDrive(this.fL, this.fR);
